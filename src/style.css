@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    color: rgb(105, 105, 105);
+}
+
+a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: gray;
+}
+
+/* Home Page */
+
+.content{
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+}
+
+.cont{
+    width: auto;
+}
+
+.head{
+    text-align: center;
+    font-size: 10rem;
+    letter-spacing: 0.3rem;
+    font-family: Poiret One, cursive;
+}
+.name{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.12rem;
+    padding: 3rem 0 5rem 0;
+    font-family: Poiret One, cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name input{
+    padding-top: 2rem;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    width: 70%;
+    font-size: 2rem;
+    font-weight: 600;
+    color:#000;
+}
+#submitName{
+    background: transparent;
+    font-size: 2rem;
+    width: 6rem;
+    margin: 1rem 0 0 -1rem;
+}
+
+
+.form__group {
+  position: relative;
+  padding: 1.5rem 0 0;
+  margin-top: 1rem;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 0.2rem solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 0.7rem 0;
+  background: transparent;
+  text-align: center;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  color: #9b9b9b;
+}
+
+.form__field{                                              /* reset input */
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.name a{
+    text-decoration: none;
+    color: #9b9b9b;
+}
+.name p{
+    font-weight: 600;
+}
+
+.cont button{
+    text-align: center;
+    border: 0.1rem solid lightgray;
+    padding: 1rem;
+    font-family: Poiret One, cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 15rem;
+}
+#instruct{
+    width: 60%;
+    background-color: rgb(235, 235, 235);
+    border: 0.1rem solid lightgray;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 14rem;
+    font-family: Poiret One, cursive;
+    display: none;
+    padding: 0 2rem;
+}
+.instructions h1{
+    text-align: center;
+}
+
+.instructions ul li{
+    list-style: none;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+
+/* Main Page */
+
+.container{
+    padding: 0 20rem;
+    font-family: Poiret One, cursive;
+}
+.container .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0 10rem 0;
+}
+
+.header .commingWord{
+    text-align: center;
+    line-height: 1rem;
+}
+.commingWord p{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.commingWord h1{
+    font-size: 5rem;
+    color: rgb(3, 146, 3);
+}
+
+#stackText{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 0.12rem;
+}
+
+.stack{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 3rem 0;
+}
+
+.stack .box{
+    border: 0.2rem solid rgb(201, 201, 201);
+    height: 12rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.box ul li{
+    border: 0.1rem solid rgb(247, 117, 117);
+    color: rgb(255, 50, 50);
+    border-radius: 1.2rem;
+    padding: 1rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-align: center;
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+.points{
+    display: flex;
+    justify-content: space-between;
+}
+.points .score, .points .power{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 0.2rem solid lightgray;
+    width: 15rem;
+    padding: 2rem;
+    border-radius: 5rem;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.word{
+    text-align: center;
+    line-height: 1rem;
+}
+.word p{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.word input{
+    width:30%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.word #inputBtn{
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 2px 1rem;
+    border: 2px solid gray;
+    border-radius: 2rem;
+    width: 10rem;
+    font-family: Poiret One, cursive;
+    font-weight: 900;
+}
+.word #inputBtn:hover{
+    background-color: #ddd;
+}
+
+/* Game Over Page */
+
+.container .leaderHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0 0 0;
+    font-family: Poiret One, cursive;
+}
+.gameoverContainer{
+    text-align: center;
+}
+
+.gameoverContainer h1{
+    font-size: 11rem;
+    letter-spacing: 0.5rem;
+}
+
+.gameoverContainer h3{
+    font-size: 3rem;
+}
+
+.gameoverContainer h2{
+    font-size: 4rem;
+}
+
+
+/* Leaderboard Page */
+
+.leaderContainer{
+    padding: 0 20rem;
+    margin-bottom: 5rem;
+}
+
+.leaderHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-top: 4rem;
+}
+
+.line{
+    visibility: hidden;
+}
+
+.leaderTopHeading{
+    text-align: center;
+    font-family: Poiret One, cursive;
+    font-weight: 800;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+}
+.leaderTable{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    font-family: Poiret One, cursive;
+    font-weight: 700;
+}
+table {
+    border-collapse: collapse;
+    width: 85%;
+}
+tr {
+    padding-bottom:1rem;
+    border-bottom: 0.1rem solid #ddd;
+    text-align: center;
+}
+th{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+td{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+/* Media query for Tablet and Mobile devices */
+
+@media (max-width:1025px) {         /* small laptops */
+    html{
+        font-size: 50%;
+    }
+    .box ul{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:770px) {          /* for tablets */
+    html{
+        font-size: 40%;
+    }
+    .box ul{
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width:430px) {          /* For mobiles */
+    html{
+        font-size: 40%;
+    }
+    .container{
+        padding: 0 3rem;
+    }
+    .leaderContainer{
+        padding: 0 3rem;
+    }
+    .leaderContainer img{
+        width: 35rem;
+    }
+    #scrollbar{
+        height: 1rem;
+    }
+}
