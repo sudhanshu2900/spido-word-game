@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Link, useNavigate } from 'react-router-dom';
+import Footer from './Footer';
 import './style.css';
 
 function Home() {
@@ -49,6 +50,8 @@ function Home() {
                 <li>👉 You can see your position in leaderboard as well.</li>
             </ul>
         </div>
+
+        <Footer/>
     </>
   )
 }
