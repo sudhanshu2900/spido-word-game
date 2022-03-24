@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import './style.css';
 import { Scrollbars } from 'react-custom-scrollbars';
+import Footer from './Footer';
 import ReactHowler from 'react-howler';
 
 function MainPage() {
@@ -150,6 +151,8 @@ function MainPage() {
                 <input id='inputBtn' type='button' value='submit' onClick={compare} />
             </div>
         </div>
+
+        <Footer/>
     </>
   )
 }
