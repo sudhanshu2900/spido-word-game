@@ -326,6 +326,25 @@ td{
 }
 
 
+/* Footer Page Start */
+
+.footerDiv{
+    display: flex;
+    height: 5rem;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #ebebeb;
+    margin-top: 5rem;
+}
+
+.footerDiv p{
+    font-size: 1.2rem;
+}
+
+/* Footer Page End */
+
+
+
 /* Media query for Tablet and Mobile devices */
 
 @media (max-width:1025px) {         /* small laptops */
