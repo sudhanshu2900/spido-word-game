@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Footer from './Footer';
 import './style.css';
 
 function GameoverPage() {
@@ -26,6 +27,8 @@ function GameoverPage() {
               <h2>{location.state.finalPower}X</h2>
           </div>
         </div>
+
+        <Footer/>
     </>
   )
 }
