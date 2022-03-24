@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import Footer from './Footer';
 import axios from "axios";
 
 function LeaderboardPage() {
@@ -54,6 +55,8 @@ function LeaderboardPage() {
           </table>
         </div>
       </div>
+
+      <Footer/>
     </>
   );
 }
