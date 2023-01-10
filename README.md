@@ -4,7 +4,7 @@
 
 <br/>
 
-Live URL of Project: https://spido-word.herokuapp.com/
+Live URL of Project: https://spido-word-game.vercel.app/
 
 <br/>
 
